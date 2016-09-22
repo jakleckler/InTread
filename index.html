@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="inTread">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="app/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+	/*ul {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden:
+		background-color: #333;
+	}
+	li {
+		float: left;
+	}
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}*/
+
+	body { 
+		padding-bottom: 70px;
+		padding-left: 10px:
+		padding-right: 10px
+		background-color: brown;
+				background-color:lightblue;
+
+			}
+	div {
+		/*border: 1px solid black;*/
+		text-align: center;
+		margin: 0 auto;
+		background-color:lightblue;
+	}
+
+	div img {
+		width: auto;
+		height: auto;
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	#inner {
+		margin: 0 auto;
+	}
+
+	</style>
+	<!-- <script type="text/javascript">
+	(function() {
+		var img = document.getElementById('logo').firstChild;
+		img.onLoad = function() {
+			if (img.height > img.width) {
+				img.height = '100%';
+				img.width = 'auto';
+			}
+		};
+	}());
+	</script> -->
+
+	
+</head>
+
+<body>
+	<navigation></navigation>
+	<div ui-view=""></div>
+</body>
+<script src="app/general/angular.min.js"></script>
+<script src="app/general/ui.router.js"></script>
+<script src="app/app.module.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/navigation/navigation.directive.js"></script>
+<script src="app/contact/email.service.js"></script>
+<script src="app/contact/contact.directive.js"></script>
+<script src="app/survey/survey.directive.js"></script>
+
+
+
+</html>
